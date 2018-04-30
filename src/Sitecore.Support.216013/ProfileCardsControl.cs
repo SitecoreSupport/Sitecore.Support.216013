@@ -120,7 +120,8 @@
       {
         TrackingField field;
         IEnumerable<ContentProfile> profiles = ProfileUtil.GetProfiles(item, out field);
-        if (field != null)
+        //The fix: check if tracking field value is not empty
+        if (field != null && field.Value != "")
         {
           int num = 0;
           foreach (ContentProfile profile in profiles)

@@ -10,7 +10,7 @@
     {
       Assert.ArgumentNotNull(args, "args");
       Item item = args.Item;
-      ProfileCardsControl control = new ProfileCardsControl
+      Sitecore.Suport.Shell.Applications.ContentEditor.Pipelines.RenderContentEditorHeader.ProfileCardsControl control = new Sitecore.Suport.Shell.Applications.ContentEditor.Pipelines.RenderContentEditorHeader.ProfileCardsControl
       {
         ID = "ProfileCardsControl" + args.Item.ID.ToShortID(),
         Item = item
